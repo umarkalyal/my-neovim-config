@@ -12,6 +12,8 @@ Hi, hope you are doing well, this is my personal Neovim configuation.
 - Telescope file, text, and buffer search
 - Treesitter syntax highlighting and indentation
 - Mason-managed LSP servers
+- In-buffer and side-by-side Markdown rendering with `markview.nvim`
+- Browser-based Markdown preview with `iamcco/markdown-preview.nvim`
 - Blink completion
 - Lualine, Bufferline, Which-Key, Gitsigns, and nvim-autopairs
 
@@ -37,6 +39,8 @@ Hi, hope you are doing well, this is my personal Neovim configuation.
 │       ├── completion.lua
 │       ├── editor-ui.lua
 │       ├── lsp.lua
+│       ├── markview.lua
+│       ├── markdown-preview.lua
 │       ├── nvim-tree.lua
 │       ├── opencode.lua
 │       ├── telescope.lua
@@ -56,6 +60,12 @@ Install Neovim, Git, a C compiler/build tools, `ripgrep`, and `fd`. Node.js/npm 
 
 On first launch, Lazy.nvim bootstraps and installs the declared plugins. Open `:Lazy` to inspect plugin status and `:checkhealth` to diagnose missing external dependencies.
 
+## Markdown Preview
+
+`markview.nvim` renders Markdown inside Neovim. Open a Markdown buffer and run `:Markview` to toggle rendering in the current view, or `:Markview splitToggle` for a side-by-side editor and preview. It uses the configured Treesitter `markdown` and `markdown_inline` parsers.
+
+`iamcco/markdown-preview.nvim` is also available for a synchronized browser preview. Run `:MarkdownPreview` to open it, `:MarkdownPreviewToggle` to toggle it, or `:MarkdownPreviewStop` to stop it. A browser must be available to open the local preview page.
+
 ## Notes
 
-The active Treesitter spec currently uses the `master` branch and `nvim-treesitter.configs` setup. Keep the plugin branch and setup API in sync when changing or updating Treesitter.
+Treesitter uses its `main` branch API for Neovim 0.12. Keep the plugin branch and setup API in sync when updating it.
