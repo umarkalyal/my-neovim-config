@@ -1,8 +1,7 @@
 # Neovim Configuration
 
-A personal Neovim setup organized around a small `init.lua`, shared config modules, and Lazy.nvim plugin specs.
-
-> **Credit:** The modularization of the configuration structure was inspired by NeuralNine: https://github.com/NeuralNine. The plugin choices, settings, keymaps, and overall configuration are my personal setup.
+Hi, hope you are doing well, this is my personal Neovim configuation.
+> **Credit:** The modularization of the configuration structure was inspired by [NeuralNine](https://github.com/NeuralNine). The plugin choices, settings, keymaps, and overall configuration are my personal setup.
 
 ## Features
 
