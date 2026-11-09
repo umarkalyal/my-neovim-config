@@ -1,5 +1,7 @@
 # Neovim IDE Setup (Antigravity-style) on Arch Linux
 
+- How i setup this neovim configuration. Now I may get peace in my life.
+
 **Goal:** Neovim ko Antigravity jaisa look dena:
 
 - **Left:** folder tree (nvim-tree)

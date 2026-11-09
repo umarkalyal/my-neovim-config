@@ -1,0 +1,19 @@
+local o = vim.opt
+
+o.number = true
+o.relativenumber = true
+o.mouse = "a"
+o.clipboard = "unnamedplus"
+o.termguicolors = true
+o.expandtab = true
+o.shiftwidth = 2
+o.tabstop = 2
+o.ignorecase = true
+o.smartcase = true
+o.signcolumn = "yes"
+o.cursorline = true
+o.splitright = true
+o.autoread = true
+o.updatetime = 250
+o.wrap = true
+o.linebreak = true
