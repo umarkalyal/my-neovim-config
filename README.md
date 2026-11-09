@@ -15,6 +15,10 @@ Hi, hope you are doing well, this is my personal Neovim configuation.
 - Blink completion
 - Lualine, Bufferline, Which-Key, Gitsigns, and nvim-autopairs
 
+## Yapping
+
+> I personaly use arch btw!!!, and suggest you to use that as well. This configuration is best for linux, for windows it may break as i've not checkt it.
+
 ## Structure
 
 ```text
