@@ -1,5 +1,7 @@
 local map = vim.keymap.set
-local toggle_term = require("config.terminal")
+local toggle_term = function()
+  require("config.terminal-manager").toggle()
+end
 local opencode_cmd = "opencode"
 local opencode_terminal_opts = {
   win = { position = "right", width = 0.35, enter = false },
