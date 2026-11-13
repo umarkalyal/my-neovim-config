@@ -317,10 +317,13 @@ function M.open()
 
   -- Create bottom terminal area
   vim.cmd("botright 15split")
-  vim.cmd("enew")
 
   state.term_win = api.nvim_get_current_win()
   vim.wo[state.term_win].winfixheight = true
+
+  -- Use a temporary unlisted scratch buffer until the real terminal buffer is shown
+  local scratch = api.nvim_create_buf(false, true)
+  api.nvim_win_set_buf(state.term_win, scratch)
 
   -- Create right-side terminal list inside the bottom area
   vim.cmd("rightbelow 26vsplit")
