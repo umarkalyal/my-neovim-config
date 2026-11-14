@@ -1,18 +1,16 @@
--- lazy.nvim
-
--- this plugin is used to show messages in a new and good UI.
+-- Plugin: folke/noice.nvim
+-- Purpose: Replaces/enhances Neovim's messages, cmdline, and popup UI for a cleaner experience.
 return {
   "folke/noice.nvim",
+  -- Load later to reduce startup cost.
   event = "VeryLazy",
   opts = {
-    -- add any options here
+    -- Add custom Noice options here if needed.
   },
   dependencies = {
-    -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+    -- UI component library required by Noice.
     "MunifTanjim/nui.nvim",
-    -- OPTIONAL:
-    --   `nvim-notify` is only needed, if you want to use the notification view.
-    --   If not available, we use `mini` as the fallback
+    -- Notification backend used by Noice's notification views (optional/fallback behavior supported).
     "rcarriga/nvim-notify",
-    }
+  },
 }

@@ -1,6 +1,7 @@
--- this file is used to add a new plugin inside neovim, the plugin helps commenting in neovim.
-
+-- Plugin: numToStr/Comment.nvim
+-- Purpose: Adds fast line/block comment toggling with motions and visual selections.
 return {
   "numToStr/Comment.nvim",
+  -- Use default keymaps/options (e.g. gcc, gc in visual mode).
   opts = {},
 }
